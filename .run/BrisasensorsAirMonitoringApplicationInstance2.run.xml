@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="BrisasensorsAirMonitoringApplicationInstance2" type="Application" factoryName="Application">
+    <envs>
+      <env name="SERVER_PORT" value="0" />
+    </envs>
+    <option name="MAIN_CLASS_NAME" value="com.brisasensors.air.monitoring.BrisasensorsAirMonitoringApplication" />
+    <module name="brisasensors-air-monitoring.main" />
+    <option name="VM_PARAMETERS" value="-XX:MaxRAM=256m" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/microservices/brisasensors-air-monitoring" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

@@ -1,0 +1,27 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="BrisasensorsAirMonitoringApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+    <module name="brisasensors-air-monitoring.main" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.brisasensors.air.monitoring.BrisasensorsAirMonitoringApplication" />
+    <option name="VM_PARAMETERS" value="-XX:MaxRAM=256m" />
+    <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/microservices/brisasensors-air-monitoring" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="com.brisasensors.air.monitoring.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+  <configuration default="false" name="BrisasensorsAirMonitoringApplication" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="com.brisasensors.air.monitoring.BrisasensorsAirMonitoringApplication" />
+    <module name="brisasensors-air-monitoring.main" />
+    <option name="VM_PARAMETERS" value="-XX:MaxRAM=256m" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/microservices/brisasensors-air-monitoring" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

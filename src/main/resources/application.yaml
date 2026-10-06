@@ -1,0 +1,38 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: brisasensors-air-monitoring
+  datasource:
+    url: jdbc:h2:file:~/brisasensors-air-monitoring-db;CASE_INSENSITIVE_IDENTIFIERS=TRUE;AUTO_SERVER=TRUE;
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 123
+  # Permite acesso remoto
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    # Alterar para create-drop em caso de mudanca do schema
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: user
+    password: password
+    virtual-host: brisasensors
+    listener:
+      simple:
+        # Com um único consumidor ativo, cada espera do retry segura a fila inteira
+        retry:
+          enabled: true
+          # Retentativas após a primeira execução (3 no total); max-attempts deixou de existir no Spring Boot 4
+          max-retries: 2
+          initial-interval: 1s
+          multiplier: 2.0
+          max-interval: 2s
